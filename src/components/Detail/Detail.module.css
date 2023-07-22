@@ -1,0 +1,54 @@
+.container {
+    background-color: yellow;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 30%;
+    gap: 5%;
+    border-radius:10px;
+    box-shadow: 3px 4px blueviolet;
+    width: 500px;
+}
+
+.image {
+    position: relative;
+    margin-left: 55px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    object-position: left;
+
+}
+
+.closeButton {
+   z-index: 1;
+    position:absolute;
+    top: 10px;
+    right: -.6%;
+    transition: color 0.3s ease;
+    background-color: blueviolet;
+    top: 0px; /* adjust as needed */
+    /* other styles */
+    font-family: 'Creepster', cursive;
+    border:none
+}
+
+.closeButton:hover {
+    /* Add your hover styles here */
+    background-color: yellow; /* Example: change background color on hover */
+}
+
+.closeButton:hover::after {
+    content: "Close"; /* The text you want to display in the popup */
+    position: absolute;
+    background-color: #333; /* Background color of the popup */
+    color: #fff; /* Text color of the popup */
+    padding: 5px; /* Space between the text and the border of the popup */
+    border-radius: 5px; /* Rounded corners of the popup */
+    top: 100%; /* Position the popup below the button */
+    transition: color 0.3s ease;
+
+    transform: translate(-50%, 10px); /* Adjust the position of the popup */
+    opacity: 0.8; /* Make the popup slightly transparent */
+}

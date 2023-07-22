@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Ysabeau+Infant:wght@1&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Creepster', cursive;
+  font-family: 'Ysabeau Infant', sans-serif;  
+  background-color: #6ccfcb;
+}
+

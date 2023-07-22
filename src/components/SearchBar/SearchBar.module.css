@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:3px;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.input {
+    padding: 3px;
+    flex-wrap: wrap;
+    transform: translateY(-70px);
+    margin-bottom: 70px;
+    font-size: 17px;
+    border: none;
+    font-family: 'Creepster', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btn {
+    font-family: 'Creepster', cursive;
+    flex-wrap: wrap;
+    /*font-family: 'Ysabeau Infant', sans-serif;*/
+    font-family: 'Creepster', cursive;
+    font-weight: bolder;
+    color: aquamarine;
+    padding: 6px;
+    position: relative;
+    transform: translateY(-70px);
+    
+    margin-bottom:70px;
+    margin-right: 15px;
+    background: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: aq;
+    font-weight: bolder;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.containerInput {
+    display: flex;
+    width: 100%;
+    margin-left: 35%;
+}
+
+@media (max-width: 864px) {
+    .containerInput {
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+.logo {
+    width:22%;
+}

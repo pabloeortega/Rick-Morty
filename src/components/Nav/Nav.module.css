@@ -1,0 +1,19 @@
+.container{
+    font-family: 'Creepster', cursive;
+    display: flex;
+  
+    text-decoration: none;
+    gap: 50px;
+    margin-right: 5%;
+}
+.link {
+    font-family: 'Creepster', cursive;
+  
+    margin-top: 2%;
+    color: blueviolet;
+    
+}
+
+.logo {
+    width: 20%;
+}

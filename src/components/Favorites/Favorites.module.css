@@ -1,0 +1,22 @@
+.title {
+    color: white;
+    
+    text-align: center;
+}
+
+.subtitle {
+    color: white;
+}
+
+.container{
+    margin-top: 50px;
+    padding:20px;
+    background:yellow;
+    border-radius:10px;
+    box-shadow: 3px 4px #ccc;
+    text-align:center;
+    font-size:large;
+    font-weight: bolder;
+    width: 20%;
+    margin-left: 37%;
+}
