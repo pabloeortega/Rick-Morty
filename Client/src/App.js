@@ -22,39 +22,44 @@ function App () {
   const location = useLocation()
   const navigate = useNavigate()
 
-  const login = (userData) => {
-    if(userData.username === username && userData.password === password  ) {
-      setAccess(true)
-      navigate('/home')
-    }
-  }
+  // const login = (userData) => {
+  //   if(userData.username === username && userData.password === password  ) {
+  //     setAccess(true)
+  //     navigate('/home')
+  //   }
+  // }
+
+  async function login()
 
   useEffect(()=> {
     !access && navigate('/')
   }, [access, navigate])
 
-
+//Search Fn
   function onSearch(id) {
-    axios(`http://localhost:3001/rickandmorty/character/${id}`)
-      .then(({ data }) => {
-          const characterFind = characters.find((char) => char.id === Number(id))
-          console.log('metodo find',characterFind);
 
-          if(characterFind) {
-            console.log('entre al if, ya esta en la lista', characterFind);
-            alert('Already in the list!')
-          }
-          
-          else if(data.id !== undefined) {
-            setCharacters((character) => [...character, data]);
-          }
-        })
+    try {
 
-        .catch((error)=> {
-          console.log('soy el catch', error);
-          alert('Intenta con otro ID')
-        })
-   }
+      const endpoint = "http://localhost:3001/rickandmorty/character/" +id
+      const { data } = await axios(endpoint)
+
+     
+        if (characters.some(char => char.id === Number(id))) {
+          alert(`#${id} is already on the list! :)`)
+        } else if (data.id) {
+          setCharacters(prevCharacters => [...prevCharacters, data]);
+        }
+      
+
+    }
+    catch (error){
+      console.log('soy el catch', error.message)
+      alert('Try with another ID')
+    }
+
+  
+    
+  }
 
  function onClose(id) {
   setCharacters(
