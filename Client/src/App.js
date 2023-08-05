@@ -16,8 +16,7 @@ function App () {
 
   const [ access, setAccess ] = useState(false)
 
-  const username = 'user123@gmail.com'
-  const password = 'user123'
+
 
   const location = useLocation()
   const navigate = useNavigate()
@@ -29,14 +28,36 @@ function App () {
   //   }
   // }
 
-  async function login()
+  async function login(userData) {
+    try {
+      const { username, password } = userData;
+   
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      const query = `?email=${username}&password=${password}`
+
+      const { data } = await axios(URL + query )
+      const { access } = data;
+         
+         setAccess(data);
+         access && navigate('/home');
+
+    } 
+
+    catch (error) {
+      if (error.response && error.response.status === 401) {
+        alert('Invalid email or password');
+      } else {
+        console.error(error);
+      }
+    }
+ }
 
   useEffect(()=> {
     !access && navigate('/')
   }, [access, navigate])
 
 //Search Fn
-  function onSearch(id) {
+  async function onSearch(id) {
 
     try {
 

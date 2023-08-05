@@ -1,26 +1,27 @@
-const express = require("express");
-const server = express();
-const router = require("./routes")
-
-const PORT = 3001;
-
-server.use((req, res, next)=>{
-  res.header("Access-Control-Origin", '*');
-  res.header("Access-Control-Credentials", 'true');
-  res.header(
-    'Acess-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept'
-  );
-  res.header(
-    'Access-Control-Allow-Methods',
-    'GET, POST, OPTIONS, PUT, DELETE'
-  );
-  next();
-});
+const express = require('express')
+const server = express()
+const router = require('./routes')
 
 
-server.use(express.jsoin())
-server.use("/rickandmorty",router)
+const PORT = 3001
 
-server.listen(PORT, ()=>console.log('server raised in port'+PORT))
+server.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header(
+       'Access-Control-Allow-Headers',
+       'Origin, X-Requested-With, Content-Type, Accept'
+    );
+    res.header(
+       'Access-Control-Allow-Methods',
+       'GET, POST, OPTIONS, PUT, DELETE'
+    );
+    next();
+ });
 
+server.use(express.json())
+server.use('/rickandmorty', router)
+
+
+
+server.listen(PORT, ()=> console.log('Server raised in port:' + PORT))

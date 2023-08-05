@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Detail =() => {
     const { id } = useParams()
 
+    
     const divRef = useRef(null);
 
     const [ character, setCharacter ] = useState({})

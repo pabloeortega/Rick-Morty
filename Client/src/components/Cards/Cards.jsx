@@ -6,6 +6,9 @@ export default function Cards(props) {
    return (
       <div className={style.container}>
          {
+            characters.length === 0 ? (
+               <h3>Welcome to the Rick and Morty application, please search for a character you want.</h3>
+            ) :
             characters.map((character)=> {
                return (
                    <Card 

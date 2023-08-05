@@ -17,3 +17,18 @@
 .logo {
     width: 20%;
 }
+
+.hamburger {
+    font-family: 'Creepster', cursive;
+    display: flex;
+}
+
+.largeMenu {
+    font-family: 'Creepster', cursive;
+    display: flex;
+}
+
+.smallMenu {
+    font-family: 'Creepster', cursive;
+    display: flex;
+}

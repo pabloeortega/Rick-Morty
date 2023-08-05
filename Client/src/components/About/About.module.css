@@ -1,9 +1,12 @@
 .text {
+    
     text-align: center;
-    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
 }
 
 .title {
-    color: white;
+    color: darkviolet;
     
 }

@@ -1,11 +1,14 @@
 .title {
-    color: white;
+    color: darkviolet;
     
     text-align: center;
 }
 
 .subtitle {
-    color: white;
+    font-size: x-large;
+    font-family: 'Creepster';
+    color: darkviolet;
+    text-shadow: darkviolet;
 }
 
 .container{

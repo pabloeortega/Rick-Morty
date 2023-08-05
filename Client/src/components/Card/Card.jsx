@@ -28,7 +28,7 @@ function Card({ id, name, species, gender, image, onClose, deleteFavorite, addFa
             setIsFav(true);
          }
       });
-   }, [myFavorites, id])
+   }, [myFavorites])
 
    return (
       <div className={`${style.container} ${animate ? 'animate__animated animate__bounceOut' : ''}`}>

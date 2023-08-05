@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Ysabeau+Infant:wght@1&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
