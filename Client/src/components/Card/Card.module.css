@@ -13,7 +13,22 @@
     font-family: 'Creepster', cursive;
     color: blueviolet;
     font-size: smaller;
+    text-decoration: none;
+
 }
+
+.overlay {
+    position: absolute;
+    top: 78px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5); /* adjust as needed */
+    color: white; /* adjust as needed */
+    padding: 4px;
+  }
+  
+  .imageContainer {
+    position: relative;
+  }
 
 .image {
     height: 250px;
@@ -47,11 +62,29 @@ h2 {
     text-align: center;
     color: blueviolet;
     transition: color 0.3s ease;
+    text-decoration: none;
+
     
 }
 
 h2:hover {
     color: #6ccfcb /* change to desired hover color */
+    
+
+}
+
+h3 {
+    font-size: medium;
+    text-align: center;
+    color: aquamarine;
+    transition: color 0.3s ease;
+}
+
+h3:hover{
+    font-size: medium;
+    text-align: center;
+    color: blueviolet;
+    transition: color 0.3s ease;
 }
 
 .containerTitle {
@@ -61,6 +94,8 @@ h2:hover {
    word-wrap: break-word; /* older browsers */
    word-break: break-word; 
     justify-content: space-around;
+    text-decoration: none;
+
 }
 
 .btnFav {
@@ -71,4 +106,6 @@ h2:hover {
 
 .h4 {
     font-size: smaller;
+    text-decoration: none;
+
 }

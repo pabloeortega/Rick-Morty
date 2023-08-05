@@ -1,12 +1,27 @@
 .text {
     
-    text-align: center;
-    font-size: larger;
+    text-align: left;
+    font-size: large;
     font-weight: bolder;
     color: black;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .title {
     color: darkviolet;
+    font-size: xx-large;
+    margin-top: 160px;
+    flex-wrap: wrap;
     
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: medium;
+    }
+
+    .title {
+        font-size: x-large;
+    }
 }

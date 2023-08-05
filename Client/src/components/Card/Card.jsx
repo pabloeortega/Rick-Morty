@@ -14,7 +14,10 @@ function Card({ id, name, species, gender, image, onClose, deleteFavorite, addFa
    const handleFavorite = () => {
       if(isFav) {
          setIsFav(false)
-         deleteFavorite(id)
+         if (pathname.includes('/favorites')) {
+            setAnimate(true)
+            setTimeout(() => deleteFavorite(id), 1000);
+         }
       }
       else {
          setIsFav(true)
@@ -28,8 +31,10 @@ function Card({ id, name, species, gender, image, onClose, deleteFavorite, addFa
             setIsFav(true);
          }
       });
+      // eslint-disable-next-line
    }, [myFavorites])
 
+  
    return (
       <div className={`${style.container} ${animate ? 'animate__animated animate__bounceOut' : ''}`}>
       
@@ -58,8 +63,12 @@ function Card({ id, name, species, gender, image, onClose, deleteFavorite, addFa
          
 
          <Link to={`/detail/${id}`}>
-            <h2> Name: {name} </h2>
-         
+  
+    
+    <div className={style.overlay}>
+      <h3>{name}</h3>
+       
+  </div>
          
 
          <div className={style.containerTitle}>

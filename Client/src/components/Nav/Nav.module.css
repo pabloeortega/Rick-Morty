@@ -1,24 +1,34 @@
 .container{
     font-family: 'Creepster', cursive;
-    display: flex;
-  
+    display: flexbox;
+    position: absolute; 
+    top: 0; 
+    right: 3px; 
+    margin-top: 2%;
+    margin-right: 3%;
     text-decoration: none;
-    gap: 50px;
-    margin-right: 5%;
+    gap: 20px;
+    font-size: x-large;
 }
 .link {
     font-family: 'Creepster', cursive;
-  
+    text-decoration: none;
     margin-top: 2%;
     color: blueviolet;
     
 }
 
 .logo {
-    width: 20%;
+    width: 100%;
 }
 
-.hamburger {
+
+.search{
+    left:10%;
+    margin-left: 20px;
+    margin-top: 300px;
+}
+/* .hamburger {
     font-family: 'Creepster', cursive;
     display: flex;
 }
@@ -31,4 +41,8 @@
 .smallMenu {
     font-family: 'Creepster', cursive;
     display: flex;
+} */@media (max-width: 864px) {
+    .containerInput {
+        flex-direction: row;
+    }
 }

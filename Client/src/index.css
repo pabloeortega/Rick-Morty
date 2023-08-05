@@ -6,7 +6,11 @@
 body {
   margin: 0;
   font-family: 'Creepster', cursive;
-  font-family: 'Ysabeau Infant', sans-serif;  
+  max-width: 90%;
+  flex-wrap:wrap ;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-decoration: none;
   background-color: #6ccfcb;
 }
 

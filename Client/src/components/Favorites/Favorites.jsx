@@ -23,12 +23,12 @@ const Favorites = ({ myFavorites }) => {
 
     return (
         <>
-        <h2  className={style.subtitle}>My Favorites</h2>
+        <h2  className={style.title}>My Favorites</h2>
 
         <div  className={style.container} >
             <select onChange={handleOrder}>
-                <option value="Ascendente">Ascendente</option>
-                <option value="Descendente">Descendente</option>
+                <option value="Ascending">Ascending</option>
+                <option value="Descending">Descending</option>
             </select>
 
             <select onChange={handleFilter}>
@@ -55,7 +55,7 @@ const Favorites = ({ myFavorites }) => {
 
         {
             myFavorites.length === 0 ? (
-                <h3 className={style.title}>Empty favorites list! </h3>
+                <p className={style.subtitle}>Empty favorites list! </p>
             ) :
             (
                 <Card characters = { myFavorites }/>

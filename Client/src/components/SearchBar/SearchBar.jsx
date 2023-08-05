@@ -1,5 +1,4 @@
 import style from "./SearchBar.module.css"
-import imageLogo from '../../assets/logoNav.png'
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -24,11 +23,11 @@ export default function SearchBar(props) {
    return (
       
       <div className={style.buttonContainer}>
-         <img 
+         {/* <img 
             src={imageLogo} 
             alt="logo rick and morty" 
             className={style.logo} 
-         />
+         /> */}
 
       { 
          !pathname.includes('/detail') &&
