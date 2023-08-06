@@ -4,7 +4,24 @@
 @import 'tailwindcss/utilities';
 
 .App {
-    font-family: 'Creepster', cursive;
+    font-family: 'Creepster';
     font-family: 'Ysabeau Infant', sans-serif;
-    background-color: #6ccfcb;
+    
+}
+
+.backgroundImage {
+    background: url('./assets/bg1.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.App.transparent {
+    background: transparent;
+}
+
+.hide {
+    display: none;
 }

@@ -19,7 +19,28 @@ function App () {
 
 
   const location = useLocation()
+  const isAboutPage = location.pathname === '/about';
   const navigate = useNavigate()
+
+//hide LOGO
+  useEffect(() => {
+    const isAboutPage = location.pathname === '/about';
+    document.body.className = isAboutPage ? 'backgroundImage' : '';
+}, [location]);
+
+useEffect(() => {
+  const anchorImage = document.querySelector('#anchor');
+  if (anchorImage) {
+      anchorImage.style.display = isAboutPage ? 'none' : '';
+  }
+}, [location, isAboutPage]);
+
+useEffect(()=> {
+  const eyesDiv = document.querySelector('#eyes');
+  if(eyesDiv) {
+    eyesDiv.style.display = isAboutPage ? 'none' : '';
+  }
+}, [location, isAboutPage])
 
   // const login = (userData) => {
   //   if(userData.username === username && userData.password === password  ) {
@@ -91,6 +112,7 @@ function App () {
  }
 
   return (
+   // <div className={`anchor ${isAboutPage ? 'hide' : ''}`}>
     <div className='App'>
 
       {
@@ -135,6 +157,7 @@ function App () {
         
         
     </div>
+   // </div>
   )
 }
 

@@ -8,7 +8,7 @@ main {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    position: relative;
+  
 }
 /*#eyes, #eyes img{
     position:absolute;

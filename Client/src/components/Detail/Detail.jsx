@@ -51,11 +51,13 @@ const Detail =() => {
                                 <button onClick={handleClose} className={style.closeButton}>Close</button>
 
                       <div >
-                        <h2>Name: {character.name}</h2>
-                        <h2>Status: {character.status}</h2>
-                        <h2>Specie: {character.species}</h2>
-                        <h2>Gender: {character.gender}</h2>
-                        <h2>Origin: {character.origin?.name}</h2>
+                      <h5>
+                        Name: {character.name}<br />
+                        Status: {character.status}<br />
+                        Specie: {character.species}<br />
+                        Gender: {character.gender}<br />
+                        Origin: {character.origin?.name}
+                      </h5>
                       </div>
                       <div>
                          <img 

@@ -10,21 +10,33 @@
     width: 250px;
     margin-top: 20px;
     background-color: yellow;
-    font-family: 'Creepster', cursive;
+    font-family: 'Creepster';
     color: blueviolet;
     font-size: smaller;
     text-decoration: none;
+
+   
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
 
 }
 
 .overlay {
     position: absolute;
-    top: 78px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.5); /* adjust as needed */
-    color: white; /* adjust as needed */
+    bottom: .5px; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
     padding: 4px;
-  }
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    height: 27px;
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */
+    justify-content: center;
+}
   
   .imageContainer {
     position: relative;
@@ -63,6 +75,8 @@ h2 {
     color: blueviolet;
     transition: color 0.3s ease;
     text-decoration: none;
+    font-family: creepster;
+
 
     
 }
@@ -78,6 +92,8 @@ h3 {
     text-align: center;
     color: aquamarine;
     transition: color 0.3s ease;
+    text-decoration: none;
+    
 }
 
 h3:hover{
@@ -88,10 +104,10 @@ h3:hover{
 }
 
 .containerTitle {
-    font-size: small;
+    font-size: medium;
     display: flex;
-    overflow-wrap: break-word; /* wraps long words onto the next line */
-   word-wrap: break-word; /* older browsers */
+    overflow-wrap: break-word; 
+   word-wrap: break-word; 
    word-break: break-word; 
     justify-content: space-around;
     text-decoration: none;

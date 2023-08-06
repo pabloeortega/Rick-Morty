@@ -4,6 +4,7 @@
     font-size: xxx-large;
     text-align: center;
     margin-top: 5px;
+    text-decoration: none;
    
     
 }
@@ -15,6 +16,7 @@
     text-shadow: darkviolet;
     text-align: center;
     margin-bottom: -25px;
+    text-decoration: none;
 
 }
 
@@ -29,5 +31,6 @@
     font-weight: bolder;
     width: 20%;
     margin-left: 37%;
+    text-decoration: none;
 }
 

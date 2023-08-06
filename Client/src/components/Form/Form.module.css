@@ -10,4 +10,47 @@
     font-weight: bolder;
     width: 20%;
     margin-left: 37%;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 450px) {
+
+    .input {
+        width:45%;
+        margin-left: 15%;
+    }
+    .container {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+/* For medium desktops */
+@media (min-width: 992px) {
+
+    .input {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .container {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+/* For large desktops */
+@media (min-width: 1200px) {
+
+    .input {
+        
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    .container {
+        width: 30%;
+        margin-left: 35%;
+    }
 }

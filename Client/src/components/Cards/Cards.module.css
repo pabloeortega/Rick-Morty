@@ -10,12 +10,16 @@
     font-size: large;
     text-decoration: none;
     margin-top: 17%;
+    font-size: large;
+    font-family: creepster;
+    text-decoration: none;
 
 }
 
 .h3{
     font-family: creepster;
     font-size: x-large;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 710px) {
