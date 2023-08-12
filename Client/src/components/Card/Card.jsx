@@ -14,10 +14,7 @@ function Card({ id, name, species, gender, image, onClose, deleteFavorite, addFa
    const handleFavorite = () => {
       if(isFav) {
          setIsFav(false)
-         if (pathname.includes('/favorites')) {
-            setAnimate(true)
-            setTimeout(() => deleteFavorite(id), 1000);
-         }
+         deleteFavorite(id)
       }
       else {
          setIsFav(true)
@@ -25,34 +22,14 @@ function Card({ id, name, species, gender, image, onClose, deleteFavorite, addFa
       }
    }
 
-
-export default class Card extends React.Component {
-   constructor(props) {
-      super(props);
-      this.state = {};
-   }
-
-   render() {
-      return (
-         <React.Fragment>
-            
-         </React.Fragment>
-      );
-   }
-}
-
- Card.propTypes = propTypes;
- Card.defaultProps = defaultProps;  
    useEffect(() => {
       myFavorites.forEach((fav) => {
          if (fav.id === id) {
             setIsFav(true);
          }
-      });
-      // eslint-disable-next-line
+      });// eslint-disable-next-line 
    }, [myFavorites])
 
-  
    return (
       <div className={`${style.container} ${animate ? 'animate__animated animate__bounceOut' : ''}`}>
       
