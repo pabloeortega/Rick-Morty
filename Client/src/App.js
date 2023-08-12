@@ -12,7 +12,7 @@ import Favorites from './components/Favorites/Favorites'
 
 
 function App () {
-  const [ characters, setCharacters ] = useState([])
+  const [characters, setCharacters] = useState([])
 
   const [ access, setAccess ] = useState(false)
 

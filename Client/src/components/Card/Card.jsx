@@ -25,6 +25,24 @@ function Card({ id, name, species, gender, image, onClose, deleteFavorite, addFa
       }
    }
 
+
+export default class Card extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {};
+   }
+
+   render() {
+      return (
+         <React.Fragment>
+            
+         </React.Fragment>
+      );
+   }
+}
+
+ Card.propTypes = propTypes;
+ Card.defaultProps = defaultProps;  
    useEffect(() => {
       myFavorites.forEach((fav) => {
          if (fav.id === id) {
